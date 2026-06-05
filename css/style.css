@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -311,25 +312,26 @@ section {
   width: 100%;
   max-width: 1000px;
   margin: 100px auto 0;
+  padding: 0 24px;
   height: 550px;
 }
 
 .canvas-mockup {
   width: 100%;
   height: 100%;
-  background: #0a0a0a;
-  border-radius: 4px;
-  border: 16px solid #121212;
-  box-shadow: 0 50px 100px rgba(0,0,0,0.9), 0 0 0 1px rgba(255,255,255,0.05), inset 0 0 50px rgba(0,0,0,0.8);
+  background: transparent;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.6);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .canvas-content {
   flex-grow: 1;
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
 }
 
 .canvas-content img {
@@ -898,18 +900,101 @@ footer {
   transform: translateY(-3px);
 }
 
+/* CTA Section */
+.cta-email-box {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 50px;
+  padding: 8px 8px 8px 32px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.cta-email-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 24px;
+}
+.cta-btn {
+  padding: 16px 32px;
+  border-radius: 40px;
+  font-size: 1.05rem;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
-  .hero-visual { height: 400px; margin-top: 60px; padding-bottom: 0;} 
+  .hero-visual { height: 400px; margin-top: 60px; } 
   .canvas-overlay { width: auto; right: 20px; bottom: 20px; left: 20px; }
-  .card-status { top: -20px; right: -10px; width: 220px;}
-  .card-series { bottom: -20px; right: 10px; width: 240px;}
+  .card-status { top: -20px; right: 20px; width: 220px;}
+  .card-series { bottom: -20px; right: 20px; width: 240px;}
   
   .grid-2 { grid-template-columns: 1fr; gap: 40px;}
-  .bento-grid { grid-template-columns: 1fr; }
-  .span-2 { grid-column: span 1; }
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+  .span-2 { grid-column: span 2; }
   
   .nav-links, .nav-auth { display: none; }
   .footer-content { flex-direction: column; gap: 60px; }
   .footer-links { flex-wrap: wrap; gap: 40px 80px; }
+}
+
+@media (max-width: 768px) {
+  section { padding: 40px 0; }
+  .section-header { margin-bottom: 40px; }
+  
+  .hero { padding-top: calc(var(--nav-height) + 40px); padding-bottom: 40px; }
+  .hero-visual { height: 300px; margin-top: 40px; }
+  
+  /* On tablet, scale down floating cards and pull them in */
+  .card-status { top: -10px; right: 24px; transform: scale(0.85); transform-origin: top right; }
+  .card-series { bottom: -10px; right: 24px; transform: scale(0.85); transform-origin: bottom right; }
+  
+  .stat-row { padding: 24px 0; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .stat-row h3 { font-size: 2.5rem; }
+  
+  .logos { gap: 30px; font-size: 1rem; }
+  .trusted-by { padding: 40px 0; }
+  
+  .review-card { padding: 24px; }
+  .faq-item { padding: 16px 20px; }
+  
+  .footer-links { gap: 40px; }
+  
+  .bento-grid { grid-template-columns: 1fr; }
+  .span-2 { grid-column: span 1; }
+  
+  .cta-email-box {
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 24px;
+    width: 100%;
+    align-items: stretch;
+  }
+  .cta-email-text {
+    margin-right: 0;
+    margin-bottom: 16px;
+    margin-top: 12px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual { height: 250px; }
+  /* Hide floating cards on very small screens to keep canvas clean */
+  .float-card { display: none !important; }
+  
+  .canvas-overlay h3 { font-size: 1.2rem; }
+  .canvas-overlay { padding: 16px; bottom: 10px; left: 10px; right: 10px; }
+  
+  .review-avatar { width: 48px; height: 48px; margin-bottom: 16px; }
+  .review-name { font-size: 1.1rem; }
+  .review-text { font-size: 0.95rem; }
 }
