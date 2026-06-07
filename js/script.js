@@ -95,3 +95,56 @@ if (filterBtns.length > 0 && filterItems.length > 0) {
     });
   });
 }
+
+// Lightbox Logic
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+const lightboxClose = document.querySelector('.lightbox-close');
+
+if (lightbox) {
+  // Add click event to all gallery images
+  const galleryItems = document.querySelectorAll('.gallery-card');
+  galleryItems.forEach(item => {
+    item.style.cursor = 'pointer';
+    item.addEventListener('click', () => {
+      const img = item.querySelector('.gallery-img');
+      const title = item.querySelector('h3');
+      
+      if (img) {
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+        if (title) {
+          lightboxCaption.innerHTML = title.innerHTML;
+        } else {
+          lightboxCaption.innerHTML = '';
+        }
+        document.body.style.overflow = 'hidden'; // prevent scrolling
+      }
+    });
+  });
+
+  // Close lightbox when clicking the close button
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto'; // restore scrolling
+    });
+  }
+
+  // Close lightbox when clicking outside the image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto'; // restore scrolling
+    }
+  });
+
+  // Close lightbox with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.style.display === 'block') {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto'; // restore scrolling
+    }
+  });
+}

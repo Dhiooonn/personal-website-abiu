@@ -146,11 +146,11 @@ together.
 Terbuka untuk kolaborasi seni, pameran,
 komisi karya, dan diskusi kreatif.
 
-abiyyu@email.com
+abimanyuibrahim1042@gmail.com
 
 [ Commission a Work ]
 
-Instagram · Behance · Email
+Instagram · WhatsApp · Email
 ```
 
 ---
@@ -303,7 +303,7 @@ git push -u origin main
 - [ ] Upload foto profil (`assets/images/profile.jpg`)
 - [ ] Upload foto karya ke `assets/images/gallery/`
 - [ ] Isi data gallery & portfolio di HTML
-- [ ] Pasang link email, Instagram, Behance
+- [ ] Pasang link email, Instagram, WhatsApp
 
 ### Sections
 - [ ] Hero + CTA buttons
