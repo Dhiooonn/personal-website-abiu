@@ -1,0 +1,866 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ABIU — Seniman Visual</title>
+    <meta
+      content="Website personal ABIYYU IBRAHIM sebagai seniman Indonesia. Visual Artist berbasis di Semarang."
+      name="description"
+    />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a class="logo" href="#">
+          <div class="logo-icon"><i class="ri-palette-fill"></i></div>
+          ABIU.
+        </a>
+        <div class="nav-links">
+          <a href="index.html#about">Tentang</a>
+          <a href="#">Galeri</a>
+          <a href="index.html#series">Seri</a>
+          <a href="index.html#process">Proses</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div class="nav-auth">
+          <a class="btn btn-primary" href="index.html#contact"
+            >Mari Berbincang →</a
+          >
+        </div>
+      </div>
+    </nav>
+    <section class="container" id="gallery" style="padding-top: 120px">
+      <div class="ambient-glow glow-gold" style="top: 20%; right: -20%"></div>
+      <div class="section-header">
+        <div class="badge"><i class="ri-gallery-fill text-primary"></i></div>
+        <h2>Jelajahi Galeri</h2>
+        <p>
+          Menampilkan galeri karya seni dengan presentasi yang kuat dan tak
+          terganggu.
+        </p>
+      </div>
+      <!-- Category Filters -->
+      <div
+        class="gallery-filters"
+        style="
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 12px;
+          margin-bottom: 40px;
+        "
+      >
+        <button
+          class="btn btn-pill filter-btn active"
+          data-filter="all"
+          style="
+            cursor: pointer;
+            background: var(--primary);
+            color: #fff;
+            border: 1px solid var(--primary);
+          "
+        >
+          Semua
+        </button>
+        <button
+          class="btn btn-pill filter-btn"
+          data-filter="desain-bitmap"
+          style="cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          Desain Bitmap
+        </button>
+        <button
+          class="btn btn-pill filter-btn"
+          data-filter="desain-map"
+          style="cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          Desain Map
+        </button>
+        <button
+          class="btn btn-pill filter-btn"
+          data-filter="ilustration"
+          style="cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          Ilustrasi
+        </button>
+        <button
+          class="btn btn-pill filter-btn"
+          data-filter="label"
+          style="cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          Label
+        </button>
+        <button
+          class="btn btn-pill filter-btn"
+          data-filter="poster"
+          style="cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          Poster
+        </button>
+        <button
+          class="btn btn-pill filter-btn"
+          data-filter="vektor-ilustration"
+          style="cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          Vektor Ilustrasi
+        </button>
+        <button
+          class="btn btn-pill filter-btn"
+          data-filter="kalender"
+          style="cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          Kalender</button
+        ><button
+          class="btn btn-pill filter-btn"
+          data-filter="leaflet"
+          style="cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          Leaflet
+        </button>
+      </div>
+      <div class="bento-grid" id="galleryGrid">
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/bitmap-1.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Bitmap 1</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/bitmap-2.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Bitmap 2</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/bitmap-3.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Bitmap 3</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/boxx.png"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Boxx</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/revisi.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Revisi</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-map"
+        >
+          <img
+            alt="Desain Map"
+            class="gallery-img"
+            src="assets/images/desain-map/peta final.png"
+            style="object-position: top"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Peta Final</h3>
+            <p class="text-muted">Desain Map</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="ilustration"
+        >
+          <img
+            alt="Ilustrasi"
+            class="gallery-img"
+            src="assets/images/ilustration/IMG_0344.PNG"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Img_0344</h3>
+            <p class="text-muted">Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="ilustration"
+        >
+          <img
+            alt="Ilustrasi"
+            class="gallery-img"
+            src="assets/images/ilustration/IMG_0368.PNG"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Img_0368</h3>
+            <p class="text-muted">Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="ilustration"
+        >
+          <img
+            alt="Ilustrasi"
+            class="gallery-img"
+            src="assets/images/ilustration/IMG_0369.PNG"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Img_0369</h3>
+            <p class="text-muted">Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="ilustration"
+        >
+          <img
+            alt="Ilustrasi"
+            class="gallery-img"
+            src="assets/images/ilustration/IMG_0370.PNG"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Img_0370</h3>
+            <p class="text-muted">Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="ilustration"
+        >
+          <img
+            alt="Ilustrasi"
+            class="gallery-img"
+            src="assets/images/ilustration/IMG_0371.PNG"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Img_0371</h3>
+            <p class="text-muted">Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="ilustration"
+        >
+          <img
+            alt="Ilustrasi"
+            class="gallery-img"
+            src="assets/images/ilustration/IMG_0414.JPG"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Img_0414</h3>
+            <p class="text-muted">Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="label"
+        >
+          <img
+            alt="Label"
+            class="gallery-img"
+            src="assets/images/label/LABEL-2.png"
+            style="object-fit: contain; background: #fff"
+          />
+          <div
+            class="gallery-content"
+            style="
+              background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.95) 10%,
+                rgba(0, 0, 0, 0.7) 60%,
+                transparent
+              );
+            "
+          >
+            <h3 class="mb-2">Label 2</h3>
+            <p class="text-muted">Label</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="label"
+        >
+          <img
+            alt="Label"
+            class="gallery-img"
+            src="assets/images/label/LABEL.png"
+            style="object-fit: contain; background: #fff"
+          />
+          <div
+            class="gallery-content"
+            style="
+              background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.95) 10%,
+                rgba(0, 0, 0, 0.7) 60%,
+                transparent
+              );
+            "
+          >
+            <h3 class="mb-2">Label</h3>
+            <p class="text-muted">Label</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="label"
+        >
+          <img
+            alt="Label"
+            class="gallery-img"
+            src="assets/images/label/label-nastar.png"
+            style="object-fit: contain; background: #fff"
+          />
+          <div
+            class="gallery-content"
+            style="
+              background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.95) 10%,
+                rgba(0, 0, 0, 0.7) 60%,
+                transparent
+              );
+            "
+          >
+            <h3 class="mb-2">Label Nastar</h3>
+            <p class="text-muted">Label</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="label"
+        >
+          <img
+            alt="Label"
+            class="gallery-img"
+            src="assets/images/label/poster-nastar.png"
+            style="object-fit: contain; background: #fff"
+          />
+          <div
+            class="gallery-content"
+            style="
+              background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.95) 10%,
+                rgba(0, 0, 0, 0.7) 60%,
+                transparent
+              );
+            "
+          >
+            <h3 class="mb-2">Poster Nastar</h3>
+            <p class="text-muted">Label</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="poster"
+        >
+          <img
+            alt="Poster"
+            class="gallery-img"
+            src="assets/images/poster/Artboard.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Artboard</h3>
+            <p class="text-muted">Poster</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="poster"
+        >
+          <img
+            alt="Poster"
+            class="gallery-img"
+            src="assets/images/poster/DP.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Dp</h3>
+            <p class="text-muted">Poster</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="poster"
+        >
+          <img
+            alt="Poster"
+            class="gallery-img"
+            src="assets/images/poster/SHAMP-FINNN.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Shamp Finnn</h3>
+            <p class="text-muted">Poster</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="poster"
+        >
+          <img
+            alt="Poster"
+            class="gallery-img"
+            src="assets/images/poster/Selaras-dengan-alam.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Selaras Dengan Alam</h3>
+            <p class="text-muted">Poster</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="poster"
+        >
+          <img
+            alt="Poster"
+            class="gallery-img"
+            src="assets/images/poster/bloodsfinal.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Bloodsfinal</h3>
+            <p class="text-muted">Poster</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="poster"
+        >
+          <img
+            alt="Poster"
+            class="gallery-img"
+            src="assets/images/poster/jojo.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Jojo</h3>
+            <p class="text-muted">Poster</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="vektor-ilustration"
+        >
+          <img
+            alt="Vektor Ilustrasi"
+            class="gallery-img"
+            src="assets/images/vektor-ilustration/88.png"
+            style="object-fit: contain; background: #fff"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">88</h3>
+            <p class="text-muted">Vektor Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="vektor-ilustration"
+        >
+          <img
+            alt="Vektor Ilustrasi"
+            class="gallery-img"
+            src="assets/images/vektor-ilustration/Untitled-1.png"
+            style="object-fit: contain; background: #fff"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Untitled 1</h3>
+            <p class="text-muted">Vektor Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="vektor-ilustration"
+        >
+          <img
+            alt="Vektor Ilustrasi"
+            class="gallery-img"
+            src="assets/images/vektor-ilustration/ikan.png"
+            style="object-fit: contain; background: #fff"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Ikan</h3>
+            <p class="text-muted">Vektor Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="vektor-ilustration"
+        >
+          <img
+            alt="Vektor Ilustrasi"
+            class="gallery-img"
+            src="assets/images/vektor-ilustration/semarang.png"
+            style="object-fit: contain; background: #fff"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Semarang</h3>
+            <p class="text-muted">Vektor Ilustrasi</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/1.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 1</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/2.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 2</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/3.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 3</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/4.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 4</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/5.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 5</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/6.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 6</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/7.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 7</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/8.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 8</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/9.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 9</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/10.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 10</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/11.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 11</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/12.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 12</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/13.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 13</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="kalender"
+        >
+          <img
+            alt="Kalender"
+            class="gallery-img"
+            src="assets/images/kalender/14.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Kalender 14</h3>
+            <p class="text-muted">Kalender</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="leaflet"
+        >
+          <img
+            alt="Leaflet"
+            class="gallery-img"
+            src="assets/images/leaflet/4.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Leaflet 4</h3>
+            <p class="text-muted">Leaflet</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="leaflet"
+        >
+          <img
+            alt="Leaflet"
+            class="gallery-img"
+            src="assets/images/leaflet/5.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Leaflet 5</h3>
+            <p class="text-muted">Leaflet</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="leaflet"
+        >
+          <img
+            alt="Leaflet"
+            class="gallery-img"
+            src="assets/images/leaflet/6.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Leaflet 6</h3>
+            <p class="text-muted">Leaflet</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="leaflet"
+        >
+          <img
+            alt="Leaflet"
+            class="gallery-img"
+            src="assets/images/leaflet/wes fix.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Wes Fix</h3>
+            <p class="text-muted">Leaflet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials / Reviews -->
+    <!-- FAQ Section -->
+    <!-- Bottom Huge CTA -->
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <a class="logo" href="#">
+            <div class="logo-icon"><i class="ri-palette-fill"></i></div>
+            ABIU.
+          </a>
+          <p class="mt-4">
+            Seniman Visual berbasis di Semarang, Indonesia.<br />Menerjemahkan
+            kondisi manusia ke dalam bentuk abstrak.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Karya</h4>
+            <a href="#">Galeri</a>
+            <a href="index.html#series">Seri</a>
+            <a href="index.html#process">Proses</a>
+          </div>
+          <div class="link-group">
+            <h4>Tentang</h4>
+            <a href="index.html#about">Biografi</a>
+            <a href="index.html#reviews">Ulasan</a>
+            <a href="index.html#">Konsep Karya</a>
+          </div>
+          <div class="link-group">
+            <h4>Hubungi</h4>
+            <a href="https://instagram.com/abiyyuibrahimm" target="_blank"
+              >Instagram</a
+            >
+            <a href="https://wa.me/6288806567598" target="_blank">WhatsApp</a>
+            <a href="mailto:abimanyuibrahim1042@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 ABIYYU IBRAHIM. Seluruh hak cipta dilindungi.</p>
+        <div class="socials">
+          <a href="https://instagram.com/abiyyuibrahimm" target="_blank"
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a href="https://wa.me/6288806567598" target="_blank"
+            ><i class="ri-whatsapp-line"></i
+          ></a>
+          <a href="mailto:abimanyuibrahim1042@gmail.com"
+            ><i class="ri-mail-line"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close">×</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

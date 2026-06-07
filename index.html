@@ -1,562 +1,793 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>ABIU — Seniman Visual</title>
-    <meta name="description" content="Website personal ABIYYU IBRAHIM sebagai seniman Indonesia. Visual Artist berbasis di Semarang.">
+    <meta
+      content="Website personal ABIYYU IBRAHIM sebagai seniman Indonesia. Visual Artist berbasis di Semarang."
+      name="description"
+    />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
     <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <div class="logo-icon"><i class="ri-palette-fill"></i></div>
-                ABIU.
-            </a>
-            <div class="nav-links">
-                <a href="#about">Tentang</a>
-                <a href="#gallery">Galeri</a>
-                <a href="#series">Seri</a>
-                <a href="#process">Proses</a>
-                <a href="#faq">FAQ</a>
-            </div>
-            <div class="nav-auth">
-                <a href="#contact" class="btn btn-primary">Mari Berbincang &rarr;</a>
-            </div>
+      <div class="container nav-container">
+        <a class="logo" href="#">
+          <div class="logo-icon"><i class="ri-palette-fill"></i></div>
+          ABIU.
+        </a>
+        <div class="nav-links">
+          <a href="#about">Tentang</a>
+          <a href="gallery.html">Galeri</a>
+          <a href="#series">Seri</a>
+          <a href="#process">Proses</a>
+          <a href="#faq">FAQ</a>
         </div>
+        <div class="nav-auth">
+          <a class="btn btn-primary" href="#contact">Mari Berbincang →</a>
+        </div>
+      </div>
     </nav>
-
     <header class="hero">
-        <div class="ambient-glow glow-red" style="top: 0%; left: -20%;"></div>
-        <div class="ambient-glow glow-orange" style="bottom: -20%; right: -10%;"></div>
-        <div class="container hero-content">
-            <div class="badge">
-                <i class="ri-sparkling-fill text-primary"></i> Pengalaman Seni Modern Minimalis
-            </div>
-            <h1>ABIYYU IBRAHIM</h1>
-            <p>Seniman Visual · Semarang, Indonesia. Seni saya lahir dari pencarian<br>definisi diri dan pemahaman terhadap esensi kehidupan itu sendiri.</p>
-            <a href="#gallery" class="btn btn-primary btn-large">Jelajahi Galeri &rarr;</a>
+      <div class="ambient-glow glow-red" style="top: 0%; left: -20%"></div>
+      <div
+        class="ambient-glow glow-orange"
+        style="bottom: -20%; right: -10%"
+      ></div>
+      <div class="container hero-content">
+        <div class="badge">
+          <i class="ri-sparkling-fill text-primary"></i> Pengalaman Seni Modern
+          Minimalis
         </div>
-        
-        <!-- Mockup Visual -->
-        <div class="hero-visual">
-            <div class="canvas-mockup">
-                <div class="canvas-content">
-                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=800&auto=format&fit=crop" alt="Artwork">
-                    <div class="canvas-overlay">
-                        <span class="label text-muted text-sm uppercase">Karya Pilihan</span>
-                        <h3>Solitude</h3>
-                        <span class="change positive">2025 <span class="text-muted">· Akrilik di Kanvas</span></span>
-                        <div style="margin-top: 16px;">
-                            <button class="btn btn-primary btn-full"><i class="ri-eye-line"></i> Lihat Detail</button>
-                        </div>
-                    </div>
-                </div>
+        <h1>ABIYYU IBRAHIM</h1>
+        <p>
+          Seniman Visual · Semarang, Indonesia. Seni saya lahir dari
+          pencarian<br />definisi diri dan pemahaman terhadap esensi kehidupan
+          itu sendiri.
+        </p>
+        <a class="btn btn-primary btn-large" href="gallery.html"
+          >Jelajahi Galeri →</a
+        >
+      </div>
+      <!-- Mockup Visual -->
+      <div class="hero-visual">
+        <div class="canvas-mockup">
+          <div class="canvas-content">
+            <img alt="Artwork" src="assets/images/poster/Artboard.jpg" />
+            <div class="canvas-overlay">
+              <span class="label text-muted text-sm uppercase"
+                >Karya Pilihan</span
+              >
+              <h3>Solitude</h3>
+              <span class="change positive"
+                >2025 <span class="text-muted">· Akrilik di Kanvas</span></span
+              >
+              <div style="margin-top: 16px">
+                <button class="btn btn-primary btn-full">
+                  <i class="ri-eye-line"></i> Lihat Detail
+                </button>
+              </div>
             </div>
-
-            <!-- Floating Cards -->
-            <div class="float-card card-status">
-                <div class="card-header">
-                    <div class="card-icon bg-orange"><i class="ri-user-star-fill"></i></div>
-                    <span class="coin-name">Status <i class="ri-checkbox-circle-fill text-primary"></i></span>
-                    <span class="btn-pill">Terbuka</span>
-                </div>
-                <div class="card-body">
-                    <h2>Tersedia</h2>
-                </div>
-                <p class="balance text-muted text-sm">Untuk Komisi & Kolaborasi</p>
-            </div>
-
-            <div class="float-card card-series">
-                <p class="text-muted text-sm">Seri Terbaru <span class="card-num" style="float: right;">2026</span></p>
-                <h2 style="margin: 8px 0;">The Echo</h2>
-                <div style="display: flex; margin-top: 16px;">
-                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=100&auto=format&fit=crop" style="width: 48px; height: 48px; border-radius: 12px; object-fit: cover;">
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- Floating Cards -->
+        <div class="float-card card-status">
+          <div class="card-header">
+            <div class="card-icon bg-orange">
+              <i class="ri-user-star-fill"></i>
+            </div>
+            <span class="coin-name"
+              >Status <i class="ri-checkbox-circle-fill text-primary"></i
+            ></span>
+            <span class="btn-pill">Terbuka</span>
+          </div>
+          <div class="card-body">
+            <h2>Tersedia</h2>
+          </div>
+          <p class="balance text-muted text-sm">
+            Untuk Komisi &amp; Kolaborasi
+          </p>
+        </div>
+        <div class="float-card card-series">
+          <p class="text-muted text-sm">
+            Seri Terbaru <span class="card-num" style="float: right">2026</span>
+          </p>
+          <h2 style="margin: 8px 0">The Echo</h2>
+          <div style="display: flex; margin-top: 16px">
+            <img
+              src="assets/images/poster/Artboard.jpg"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 12px;
+                object-fit: cover;
+              "
+            />
+          </div>
+        </div>
+      </div>
     </header>
-
-    <section class="trusted-by container" id="about">
-        <p class="section-label">Ditampilkan & Dipamerkan Di</p>
-        <div class="logos">
-            <span>ART JAKARTA</span>
-            <span>MACAN</span>
-            <span>SALIHARA</span>
-            <span>RUANGRUPA</span>
-            <span>NATIONAL GALLERY</span>
+    <section class="smarter-investing container" id="about">
+      <div class="ambient-glow glow-dark" style="top: -10%; left: 30%"></div>
+      <div class="section-header">
+        <div class="badge">
+          <i class="ri-quill-pen-fill text-primary"></i>
         </div>
+        <h2>Tentang ABIU</h2>
+        <p>
+          Saya ABIYYU IBRAHIM, seorang seniman Indonesia yang tinggal di
+          Semarang. Karya saya lahir dari pencarian akan definisi diri dan
+          pemahaman terhadap esensi kehidupan. Lewat bahasa visual yang kuat dan
+          jelas, saya berupaya menangkap pengalaman manusia yang kolektif dan
+          membagikannya melalui goresan kuas.
+        </p>
+      </div>
     </section>
-
-    <section class="smarter-investing container">
-        <div class="ambient-glow glow-dark" style="top: -10%; left: 30%;"></div>
-        <div class="grid-2">
-            <div class="content">
-                <div class="badge"><i class="ri-quill-pen-fill text-primary"></i></div>
-                <h2>Tentang ABIU</h2>
-                <p>Saya ABIYYU IBRAHIM, seorang seniman Indonesia yang tinggal di Semarang. Karya saya lahir dari pencarian akan definisi diri dan pemahaman terhadap esensi kehidupan. Lewat bahasa visual yang kuat dan jelas, saya berupaya menangkap pengalaman manusia yang kolektif dan membagikannya melalui goresan kuas.</p>
-            </div>
-            <div class="stats">
-                <div class="stat-row">
-                    <h3>5+</h3>
-                    <p>Tahun Aktif</p>
-                </div>
-                <div class="stat-row">
-                    <h3>50+</h3>
-                    <p>Karya Tercipta</p>
-                </div>
-                <div class="stat-row border-none">
-                    <h3>12</h3>
-                    <p>Pameran</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="container" id="gallery">
-        <div class="ambient-glow glow-gold" style="top: 20%; right: -20%;"></div>
-        <div class="section-header">
-            <div class="badge"><i class="ri-gallery-fill text-primary"></i></div>
-            <h2>Jelajahi Galeri</h2>
-            <p>Menampilkan galeri karya seni dengan presentasi yang kuat dan tak terganggu.</p>
+      <div class="ambient-glow glow-gold" style="top: 20%; right: -20%"></div>
+      <div class="section-header">
+        <div class="badge"><i class="ri-gallery-fill text-primary"></i></div>
+        <h2>Jelajahi Galeri</h2>
+        <p>
+          Menampilkan galeri karya seni dengan presentasi yang kuat dan tak
+          terganggu.
+        </p>
+      </div>
+      <!-- Category Filters -->
+      <div class="bento-grid" id="galleryGrid">
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/bitmap-1.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Bitmap 1</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
         </div>
-
-        <!-- Category Filters -->
-        <div class="gallery-filters" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 40px;">
-            <button class="btn btn-pill filter-btn active" data-filter="all" style="cursor: pointer; background: var(--primary); color: #fff; border: 1px solid var(--primary);">Semua</button>
-            <button class="btn btn-pill filter-btn" data-filter="desain-bitmap" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Desain Bitmap</button>
-            <button class="btn btn-pill filter-btn" data-filter="desain-map" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Desain Map</button>
-            <button class="btn btn-pill filter-btn" data-filter="ilustration" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Ilustrasi</button>
-            <button class="btn btn-pill filter-btn" data-filter="label" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Label</button>
-            <button class="btn btn-pill filter-btn" data-filter="poster" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Poster</button>
-            <button class="btn btn-pill filter-btn" data-filter="vektor-ilustration" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Vektor Ilustrasi</button>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/bitmap-2.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Bitmap 2</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
         </div>
-
-        <div class="bento-grid" id="galleryGrid">
-            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
-                <img src="assets/images/desain-bitmap/bitmap-1.jpg" class="gallery-img" alt="Desain Bitmap">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Bitmap 1</h3>
-                    <p class="text-muted">Desain Bitmap</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
-                <img src="assets/images/desain-bitmap/bitmap-2.jpg" class="gallery-img" alt="Desain Bitmap">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Bitmap 2</h3>
-                    <p class="text-muted">Desain Bitmap</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
-                <img src="assets/images/desain-bitmap/bitmap-3.jpg" class="gallery-img" alt="Desain Bitmap">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Bitmap 3</h3>
-                    <p class="text-muted">Desain Bitmap</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
-                <img src="assets/images/desain-bitmap/boxx.png" class="gallery-img" alt="Desain Bitmap">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Boxx</h3>
-                    <p class="text-muted">Desain Bitmap</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
-                <img src="assets/images/desain-bitmap/revisi.jpg" class="gallery-img" alt="Desain Bitmap">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Revisi</h3>
-                    <p class="text-muted">Desain Bitmap</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-map">
-                <img src="assets/images/desain-map/peta final.png" class="gallery-img" alt="Desain Map" style="object-position: top;">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Peta Final</h3>
-                    <p class="text-muted">Desain Map</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
-                <img src="assets/images/ilustration/IMG_0344.PNG" class="gallery-img" alt="Ilustrasi">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Img_0344</h3>
-                    <p class="text-muted">Ilustrasi</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
-                <img src="assets/images/ilustration/IMG_0368.PNG" class="gallery-img" alt="Ilustrasi">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Img_0368</h3>
-                    <p class="text-muted">Ilustrasi</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
-                <img src="assets/images/ilustration/IMG_0369.PNG" class="gallery-img" alt="Ilustrasi">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Img_0369</h3>
-                    <p class="text-muted">Ilustrasi</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
-                <img src="assets/images/ilustration/IMG_0370.PNG" class="gallery-img" alt="Ilustrasi">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Img_0370</h3>
-                    <p class="text-muted">Ilustrasi</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
-                <img src="assets/images/ilustration/IMG_0371.PNG" class="gallery-img" alt="Ilustrasi">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Img_0371</h3>
-                    <p class="text-muted">Ilustrasi</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
-                <img src="assets/images/ilustration/IMG_0414.JPG" class="gallery-img" alt="Ilustrasi">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Img_0414</h3>
-                    <p class="text-muted">Ilustrasi</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="label">
-                <img src="assets/images/label/LABEL-2.png" class="gallery-img" alt="Label" style="object-fit: contain; background: #fff;">
-                <div class="gallery-content" style="background: linear-gradient(to top, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.7) 60%, transparent);">
-                    <h3 class="mb-2">Label 2</h3>
-                    <p class="text-muted">Label</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="label">
-                <img src="assets/images/label/LABEL.png" class="gallery-img" alt="Label" style="object-fit: contain; background: #fff;">
-                <div class="gallery-content" style="background: linear-gradient(to top, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.7) 60%, transparent);">
-                    <h3 class="mb-2">Label</h3>
-                    <p class="text-muted">Label</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="label">
-                <img src="assets/images/label/label-nastar.png" class="gallery-img" alt="Label" style="object-fit: contain; background: #fff;">
-                <div class="gallery-content" style="background: linear-gradient(to top, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.7) 60%, transparent);">
-                    <h3 class="mb-2">Label Nastar</h3>
-                    <p class="text-muted">Label</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="label">
-                <img src="assets/images/label/poster-nastar.png" class="gallery-img" alt="Label" style="object-fit: contain; background: #fff;">
-                <div class="gallery-content" style="background: linear-gradient(to top, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.7) 60%, transparent);">
-                    <h3 class="mb-2">Poster Nastar</h3>
-                    <p class="text-muted">Label</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
-                <img src="assets/images/poster/Artboard.jpg" class="gallery-img" alt="Poster">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Artboard</h3>
-                    <p class="text-muted">Poster</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
-                <img src="assets/images/poster/DP.jpg" class="gallery-img" alt="Poster">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Dp</h3>
-                    <p class="text-muted">Poster</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
-                <img src="assets/images/poster/SHAMP-FINNN.jpg" class="gallery-img" alt="Poster">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Shamp Finnn</h3>
-                    <p class="text-muted">Poster</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
-                <img src="assets/images/poster/Selaras-dengan-alam.jpg" class="gallery-img" alt="Poster">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Selaras Dengan Alam</h3>
-                    <p class="text-muted">Poster</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
-                <img src="assets/images/poster/bloodsfinal.jpg" class="gallery-img" alt="Poster">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Bloodsfinal</h3>
-                    <p class="text-muted">Poster</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
-                <img src="assets/images/poster/jojo.jpg" class="gallery-img" alt="Poster">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Jojo</h3>
-                    <p class="text-muted">Poster</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="vektor-ilustration">
-                <img src="assets/images/vektor-ilustration/88.png" class="gallery-img" alt="Vektor Ilustrasi" style="object-fit: contain; background: #fff;">
-                <div class="gallery-content">
-                    <h3 class="mb-2">88</h3>
-                    <p class="text-muted">Vektor Ilustrasi</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="vektor-ilustration">
-                <img src="assets/images/vektor-ilustration/Untitled-1.png" class="gallery-img" alt="Vektor Ilustrasi" style="object-fit: contain; background: #fff;">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Untitled 1</h3>
-                    <p class="text-muted">Vektor Ilustrasi</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="vektor-ilustration">
-                <img src="assets/images/vektor-ilustration/ikan.png" class="gallery-img" alt="Vektor Ilustrasi" style="object-fit: contain; background: #fff;">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Ikan</h3>
-                    <p class="text-muted">Vektor Ilustrasi</p>
-                </div>
-            </div>
-            <div class="bento-card gallery-card span-1 filter-item" data-category="vektor-ilustration">
-                <img src="assets/images/vektor-ilustration/semarang.png" class="gallery-img" alt="Vektor Ilustrasi" style="object-fit: contain; background: #fff;">
-                <div class="gallery-content">
-                    <h3 class="mb-2">Semarang</h3>
-                    <p class="text-muted">Vektor Ilustrasi</p>
-                </div>
-            </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/bitmap-3.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Bitmap 3</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
         </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/boxx.png"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Boxx</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-bitmap"
+        >
+          <img
+            alt="Desain Bitmap"
+            class="gallery-img"
+            src="assets/images/desain-bitmap/revisi.jpg"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Revisi</h3>
+            <p class="text-muted">Desain Bitmap</p>
+          </div>
+        </div>
+        <div
+          class="bento-card gallery-card span-1 filter-item"
+          data-category="desain-map"
+        >
+          <img
+            alt="Desain Map"
+            class="gallery-img"
+            src="assets/images/desain-map/peta final.png"
+            style="object-position: top"
+          />
+          <div class="gallery-content">
+            <h3 class="mb-2">Peta Final</h3>
+            <p class="text-muted">Desain Map</p>
+          </div>
+        </div>
+        <div style="grid-column: 1 / -1; text-align: center; margin-top: 24px">
+          <a class="btn btn-primary btn-large" href="gallery.html"
+            >Lihat Semua Galeri →</a
+          >
+        </div>
+      </div>
     </section>
-
     <section class="container" id="series">
-        <div class="ambient-glow glow-orange" style="top: 10%; left: -20%;"></div>
-        <div class="section-header left">
-            <div class="badge"><i class="ri-folder-open-fill text-primary"></i></div>
-            <h2>Seri Portofolio</h2>
-            <p>Mengelompokkan karya ke dalam seri atau project artistik.</p>
+      <div class="ambient-glow glow-orange" style="top: 10%; left: -20%"></div>
+      <div class="section-header left">
+        <div class="badge">
+          <i class="ri-folder-open-fill text-primary"></i>
+        </div>
+        <h2>Seri Portofolio</h2>
+        <p>Mengelompokkan karya ke dalam seri atau project artistik.</p>
+      </div>
+      <div class="series-grid">
+        <div class="series-card">
+          <div class="icon-name">
+            <div class="card-icon" style="background: #ff6b6b; color: #fff">
+              <i class="ri-image-edit-fill"></i>
+            </div>
+            <div>
+              <h4>Desain Bitmap</h4>
+              <span class="text-muted text-sm">Portofolio</span>
+            </div>
+          </div>
+          <div
+            class="card-footer"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h4 style="color: #fff">5 Karya</h4>
+            <a
+              class="positive"
+              href="gallery.html"
+              style="font-size: 0.9rem; font-weight: 500; text-decoration: none"
+              >Lihat Seri →</a
+            >
+          </div>
+        </div>
+        <div class="series-card">
+          <div class="icon-name">
+            <div class="card-icon" style="background: #627eea; color: #fff">
+              <i class="ri-map-2-line"></i>
+            </div>
+            <div>
+              <h4>Desain Map</h4>
+              <span class="text-muted text-sm">Portofolio</span>
+            </div>
+          </div>
+          <div
+            class="card-footer"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h4 style="color: #fff">1 Karya</h4>
+            <a
+              class="positive"
+              href="gallery.html"
+              style="font-size: 0.9rem; font-weight: 500; text-decoration: none"
+              >Lihat Seri →</a
+            >
+          </div>
+        </div>
+        <div class="series-card">
+          <div class="icon-name">
+            <div class="card-icon" style="background: #26a17b; color: #fff">
+              <i class="ri-brush-line"></i>
+            </div>
+            <div>
+              <h4>Ilustrasi</h4>
+              <span class="text-muted text-sm">Portofolio</span>
+            </div>
+          </div>
+          <div
+            class="card-footer"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h4 style="color: #fff">6 Karya</h4>
+            <a
+              class="positive"
+              href="gallery.html"
+              style="font-size: 0.9rem; font-weight: 500; text-decoration: none"
+              >Lihat Seri →</a
+            >
+          </div>
+        </div>
+        <div class="series-card">
+          <div class="icon-name">
+            <div class="card-icon" style="background: #9b51e0; color: #fff">
+              <i class="ri-price-tag-3-line"></i>
+            </div>
+            <div>
+              <h4>Label</h4>
+              <span class="text-muted text-sm">Portofolio</span>
+            </div>
+          </div>
+          <div
+            class="card-footer"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h4 style="color: #fff">4 Karya</h4>
+            <a
+              class="positive"
+              href="gallery.html"
+              style="font-size: 0.9rem; font-weight: 500; text-decoration: none"
+              >Lihat Seri →</a
+            >
+          </div>
+        </div>
+        <div class="series-card">
+          <div class="icon-name">
+            <div class="card-icon" style="background: #e0519b; color: #fff">
+              <i class="ri-layout-masonry-line"></i>
+            </div>
+            <div>
+              <h4>Poster</h4>
+              <span class="text-muted text-sm">Portofolio</span>
+            </div>
+          </div>
+          <div
+            class="card-footer"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h4 style="color: #fff">6 Karya</h4>
+            <a
+              class="positive"
+              href="gallery.html"
+              style="font-size: 0.9rem; font-weight: 500; text-decoration: none"
+              >Lihat Seri →</a
+            >
+          </div>
+        </div>
+        <div class="series-card">
+          <div class="icon-name">
+            <div class="card-icon" style="background: #e0b851; color: #fff">
+              <i class="ri-shape-2-line"></i>
+            </div>
+            <div>
+              <h4>Vektor Ilustrasi</h4>
+              <span class="text-muted text-sm">Portofolio</span>
+            </div>
+          </div>
+          <div
+            class="card-footer"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h4 style="color: #fff">4 Karya</h4>
+            <a
+              class="positive"
+              href="gallery.html"
+              style="font-size: 0.9rem; font-weight: 500; text-decoration: none"
+              >Lihat Seri →</a
+            >
+          </div>
         </div>
 
-        <div class="series-grid">
-            <div class="series-card">
-                <div class="icon-name">
-                    <div class="card-icon bg-orange"><i class="ri-user-smile-line"></i></div>
-                    <div>
-                        <h4>Human Condition</h4>
-                        <span class="text-muted text-sm">2025</span>
-                    </div>
-                </div>
-                <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center;">
-                    <h4 style="color: #fff;">8 Karya</h4>
-                    <span class="positive" style="font-size: 0.9rem; font-weight: 500;">Lihat Seri &rarr;</span>
-                </div>
+        <div class="series-card">
+          <div class="icon-name">
+            <div class="card-icon" style="background: #4a90e2; color: #fff">
+              <i class="ri-calendar-event-line"></i>
             </div>
-            
-            <div class="series-card">
-                <div class="icon-name">
-                    <div class="card-icon" style="background:#627EEA;"><i class="ri-message-3-line"></i></div>
-                    <div>
-                        <h4>Silent Dialogues</h4>
-                        <span class="text-muted text-sm">2024</span>
-                    </div>
-                </div>
-                <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center;">
-                    <h4 style="color: #fff;">5 Karya</h4>
-                    <span class="positive" style="font-size: 0.9rem; font-weight: 500;">Lihat Seri &rarr;</span>
-                </div>
+            <div>
+              <h4>Kalender</h4>
+              <span class="text-muted text-sm">Portofolio</span>
             </div>
-            
-            <div class="series-card">
-                <div class="icon-name">
-                    <div class="card-icon" style="background:#26A17B;"><i class="ri-building-line"></i></div>
-                    <div>
-                        <h4>Urban Echoes</h4>
-                        <span class="text-muted text-sm">2023</span>
-                    </div>
-                </div>
-                <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center;">
-                    <h4 style="color: #fff;">12 Karya</h4>
-                    <span class="positive" style="font-size: 0.9rem; font-weight: 500;">Lihat Seri &rarr;</span>
-                </div>
-            </div>
-            
-            <div class="series-card">
-                <div class="icon-name">
-                    <div class="card-icon" style="background:#14F195; color:#000;"><i class="ri-shape-2-line"></i></div>
-                    <div>
-                        <h4>Abstract Forms</h4>
-                        <span class="text-muted text-sm">2022</span>
-                    </div>
-                </div>
-                <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center;">
-                    <h4 style="color: #fff;">6 Karya</h4>
-                    <span class="positive" style="font-size: 0.9rem; font-weight: 500;">Lihat Seri &rarr;</span>
-                </div>
-            </div>
+          </div>
+          <div
+            class="card-footer"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h4 style="color: #fff">14 Karya</h4>
+            <a
+              class="positive"
+              href="gallery.html"
+              style="font-size: 0.9rem; font-weight: 500; text-decoration: none"
+              >Lihat Seri →</a
+            >
+          </div>
         </div>
+
+        <div class="series-card">
+          <div class="icon-name">
+            <div class="card-icon" style="background: #f5a623; color: #fff">
+              <i class="ri-booklet-line"></i>
+            </div>
+            <div>
+              <h4>Leaflet</h4>
+              <span class="text-muted text-sm">Portofolio</span>
+            </div>
+          </div>
+          <div
+            class="card-footer"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h4 style="color: #fff">4 Karya</h4>
+            <a
+              class="positive"
+              href="gallery.html"
+              style="font-size: 0.9rem; font-weight: 500; text-decoration: none"
+              >Lihat Seri →</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
-
     <section class="container" id="process">
-        <div class="ambient-glow glow-red" style="bottom: 0%; right: -20%;"></div>
-        <div class="section-header">
-            <div class="badge"><i class="ri-focus-3-line text-primary"></i></div>
-            <h2>Proses Artistik</h2>
-            <p>Melihat lebih dekat bagaimana setiap karya seni dilahirkan.</p>
+      <div class="ambient-glow glow-red" style="bottom: 0%; right: -20%"></div>
+      <div class="section-header">
+        <div class="badge"><i class="ri-focus-3-line text-primary"></i></div>
+        <h2>Proses Artistik</h2>
+        <p>Melihat lebih dekat bagaimana setiap karya seni dilahirkan.</p>
+      </div>
+      <div class="bento-grid">
+        <div class="bento-card span-1 glow-bottom" style="text-align: center">
+          <i
+            class="ri-lightbulb-flash-fill text-primary"
+            style="
+              font-size: 3.5rem;
+              margin-bottom: 24px;
+              display: inline-block;
+            "
+          ></i>
+          <h3 class="mb-2">1. Konseptualisasi</h3>
+          <p>
+            Pencarian ide dan narasi personal melalui riset dan observasi
+            mendalam tentang kehidupan.
+          </p>
         </div>
-        
-        <div class="bento-grid">
-            <div class="bento-card span-1 glow-bottom" style="text-align: center;">
-                <i class="ri-lightbulb-flash-fill text-primary" style="font-size: 3.5rem; margin-bottom: 24px; display: inline-block;"></i>
-                <h3 class="mb-2">1. Konseptualisasi</h3>
-                <p>Pencarian ide dan narasi personal melalui riset dan observasi mendalam tentang kehidupan.</p>
-            </div>
-            <div class="bento-card span-1 glow-bottom" style="text-align: center;">
-                <i class="ri-brush-fill text-primary" style="font-size: 3.5rem; margin-bottom: 24px; display: inline-block;"></i>
-                <h3 class="mb-2">2. Penciptaan</h3>
-                <p>Proses penuangan emosi ke dalam kanvas menggunakan berbagai media secara eksploratif.</p>
-            </div>
-            <div class="bento-card span-1 glow-bottom" style="text-align: center;">
-                <i class="ri-presentation-fill text-primary" style="font-size: 3.5rem; margin-bottom: 24px; display: inline-block;"></i>
-                <h3 class="mb-2">3. Pameran</h3>
-                <p>Presentasi karya secara publik untuk menciptakan ruang dialog intim dengan audiens.</p>
-            </div>
+        <div class="bento-card span-1 glow-bottom" style="text-align: center">
+          <i
+            class="ri-brush-fill text-primary"
+            style="
+              font-size: 3.5rem;
+              margin-bottom: 24px;
+              display: inline-block;
+            "
+          ></i>
+          <h3 class="mb-2">2. Penciptaan</h3>
+          <p>
+            Proses penuangan emosi ke dalam kanvas menggunakan berbagai media
+            secara eksploratif.
+          </p>
         </div>
+        <div class="bento-card span-1 glow-bottom" style="text-align: center">
+          <i
+            class="ri-presentation-fill text-primary"
+            style="
+              font-size: 3.5rem;
+              margin-bottom: 24px;
+              display: inline-block;
+            "
+          ></i>
+          <h3 class="mb-2">3. Pameran</h3>
+          <p>
+            Presentasi karya secara publik untuk menciptakan ruang dialog intim
+            dengan audiens.
+          </p>
+        </div>
+      </div>
     </section>
-
     <!-- Testimonials / Reviews -->
     <section class="container" id="reviews">
-        <div class="ambient-glow glow-dark" style="top: 10%; left: -10%;"></div>
-        <div class="section-header">
-            <h2>Apa Kata Kolektor Seni</h2>
-            <p>Apresiasi dari para kolektor dan penikmat seni.</p>
+      <div class="ambient-glow glow-dark" style="top: 10%; left: -10%"></div>
+      <div class="section-header">
+        <h2>Apa Kata Kolektor Seni</h2>
+        <p>Apresiasi dari para kolektor dan penikmat seni.</p>
+      </div>
+      <div class="reviews-slider" id="reviewsSlider">
+        <div class="review-card">
+          <img class="review-avatar" src="assets/images/poster/DP.jpg" />
+          <h4 class="review-name">Reza Pratama</h4>
+          <span class="review-role">Kolektor Seni</span>
+          <p class="review-text">
+            "Karya ABIU memiliki kedalaman emosi yang luar biasa. Setiap sapuan
+            kuasnya terasa seperti menceritakan kisah yang sangat personal namun
+            bisa dirasakan oleh siapa saja yang melihatnya."
+          </p>
         </div>
-        <div class="reviews-slider" id="reviewsSlider">
-            <div class="review-card">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop" class="review-avatar">
-                <h4 class="review-name">Reza Pratama</h4>
-                <span class="review-role">Kolektor Seni</span>
-                <p class="review-text">"Karya ABIU memiliki kedalaman emosi yang luar biasa. Setiap sapuan kuasnya terasa seperti menceritakan kisah yang sangat personal namun bisa dirasakan oleh siapa saja yang melihatnya."</p>
-            </div>
-            <div class="review-card">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" class="review-avatar">
-                <h4 class="review-name">Sarah Wijaya</h4>
-                <span class="review-role">Kurator Galeri</span>
-                <p class="review-text">"Pameran 'Human Condition' benar-benar membuka mata saya. Gaya abstrak minimalisnya memberikan ruang bagi penonton untuk merefleksikan diri mereka sendiri di dalam karya tersebut."</p>
-            </div>
-            <div class="review-card">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" class="review-avatar">
-                <h4 class="review-name">Budi Santoso</h4>
-                <span class="review-role">Kolektor Pribadi</span>
-                <p class="review-text">"Sangat menginspirasi. Pemilihan warna dan tekstur dalam seri terbarunya benar-benar membawa nuansa baru dalam koleksi seni modern saya di rumah."</p>
-            </div>
-            <div class="review-card">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=60&h=60&fit=crop" class="review-avatar">
-                <h4 class="review-name">Linda Kusuma</h4>
-                <span class="review-role">Pengamat Seni</span>
-                <p class="review-text">"Ada keheningan sekaligus teriakan di dalam setiap goresannya. Seniman muda dengan potensi luar biasa yang patut diapresiasi secara global."</p>
-            </div>
+        <div class="review-card">
+          <img
+            class="review-avatar"
+            src="assets/images/vektor-ilustration/88.png"
+          />
+          <h4 class="review-name">Sarah Wijaya</h4>
+          <span class="review-role">Kurator Galeri</span>
+          <p class="review-text">
+            "Pameran 'Human Condition' benar-benar membuka mata saya. Gaya
+            abstrak minimalisnya memberikan ruang bagi penonton untuk
+            merefleksikan diri mereka sendiri di dalam karya tersebut."
+          </p>
         </div>
-        <div style="display: flex; justify-content: center; gap: 16px; margin-top: 24px;">
-            <button id="prevReviewBtn" style="width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; cursor: pointer; transition: 0.3s;"><i class="ri-arrow-left-line" style="font-size: 1.2rem;"></i></button>
-            <button id="nextReviewBtn" style="width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; cursor: pointer; transition: 0.3s;"><i class="ri-arrow-right-line" style="font-size: 1.2rem;"></i></button>
+        <div class="review-card">
+          <img
+            class="review-avatar"
+            src="assets/images/desain-bitmap/boxx.png"
+          />
+          <h4 class="review-name">Budi Santoso</h4>
+          <span class="review-role">Kolektor Pribadi</span>
+          <p class="review-text">
+            "Sangat menginspirasi. Pemilihan warna dan tekstur dalam seri
+            terbarunya benar-benar membawa nuansa baru dalam koleksi seni modern
+            saya di rumah."
+          </p>
         </div>
-
+        <div class="review-card">
+          <img
+            class="review-avatar"
+            src="assets/images/ilustration/IMG_0344.PNG"
+          />
+          <h4 class="review-name">Linda Kusuma</h4>
+          <span class="review-role">Pengamat Seni</span>
+          <p class="review-text">
+            "Ada keheningan sekaligus teriakan di dalam setiap goresannya.
+            Seniman muda dengan potensi luar biasa yang patut diapresiasi secara
+            global."
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 16px;
+          margin-top: 24px;
+        "
+      >
+        <button
+          id="prevReviewBtn"
+          style="
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+          "
+        >
+          <i class="ri-arrow-left-line" style="font-size: 1.2rem"></i>
+        </button>
+        <button
+          id="nextReviewBtn"
+          style="
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+          "
+        >
+          <i class="ri-arrow-right-line" style="font-size: 1.2rem"></i>
+        </button>
+      </div>
     </section>
-
     <!-- FAQ Section -->
     <section class="container" id="faq">
-        <div class="ambient-glow glow-gold" style="top: 20%; right: -10%;"></div>
-        <div class="grid-2" style="align-items: flex-start;">
-            <div>
-                <div class="badge"><i class="ri-question-answer-fill text-primary"></i></div>
-                <h2>Tanya Jawab<br>(FAQ)</h2>
-                <p>Informasi seputar komisi karya, pengiriman, dan pameran.</p>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item active">
-                    <div class="faq-header" onclick="this.parentElement.classList.toggle('active')">
-                        <h4>Apakah Anda menerima komisi karya?</h4>
-                        <i class="ri-add-line text-primary faq-icon"></i>
-                    </div>
-                    <div class="faq-body">
-                        <p class="mt-4">Ya, saya sangat terbuka untuk komisi karya (commission work). Silakan hubungi saya melalui email untuk mendiskusikan konsep, ukuran lukisan, dan tenggat waktu yang Anda inginkan.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-header" onclick="this.parentElement.classList.toggle('active')">
-                        <h4>Bagaimana proses pengiriman karya seni?</h4>
-                        <i class="ri-add-line text-primary faq-icon"></i>
-                    </div>
-                    <div class="faq-body">
-                        <p class="mt-4">Karya seni akan dikemas secara profesional menggunakan kayu dan bubble wrap tebal untuk memastikan keamanan selama pengiriman, baik untuk rute domestik maupun internasional.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-header" onclick="this.parentElement.classList.toggle('active')">
-                        <h4>Di mana saya bisa melihat karya secara langsung?</h4>
-                        <i class="ri-add-line text-primary faq-icon"></i>
-                    </div>
-                    <div class="faq-body">
-                        <p class="mt-4">Saat ini studio saya di Semarang terbuka untuk kunjungan pribadi dengan perjanjian (*by appointment*). Karya saya juga kerap dipamerkan di berbagai galeri di Jakarta.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="ambient-glow glow-gold" style="top: 20%; right: -10%"></div>
+      <div class="grid-2" style="align-items: flex-start">
+        <div>
+          <div class="badge">
+            <i class="ri-question-answer-fill text-primary"></i>
+          </div>
+          <h2>Tanya Jawab<br />(FAQ)</h2>
+          <p>Informasi seputar komisi karya, pengiriman, dan pameran.</p>
         </div>
+        <div class="faq-list">
+          <div class="faq-item active">
+            <div
+              class="faq-header"
+              onclick="this.parentElement.classList.toggle('active')"
+            >
+              <h4>Apakah Anda menerima komisi karya?</h4>
+              <i class="ri-add-line text-primary faq-icon"></i>
+            </div>
+            <div class="faq-body">
+              <p class="mt-4">
+                Ya, saya sangat terbuka untuk komisi karya (commission work).
+                Silakan hubungi saya melalui email untuk mendiskusikan konsep,
+                ukuran lukisan, dan tenggat waktu yang Anda inginkan.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div
+              class="faq-header"
+              onclick="this.parentElement.classList.toggle('active')"
+            >
+              <h4>Bagaimana proses pengiriman karya seni?</h4>
+              <i class="ri-add-line text-primary faq-icon"></i>
+            </div>
+            <div class="faq-body">
+              <p class="mt-4">
+                Karya seni akan dikemas secara profesional menggunakan kayu dan
+                bubble wrap tebal untuk memastikan keamanan selama pengiriman,
+                baik untuk rute domestik maupun internasional.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div
+              class="faq-header"
+              onclick="this.parentElement.classList.toggle('active')"
+            >
+              <h4>Di mana saya bisa melihat karya secara langsung?</h4>
+              <i class="ri-add-line text-primary faq-icon"></i>
+            </div>
+            <div class="faq-body">
+              <p class="mt-4">
+                Saat ini studio saya di Semarang terbuka untuk kunjungan pribadi
+                dengan perjanjian (*by appointment*). Karya saya juga kerap
+                dipamerkan di berbagai galeri di Jakarta.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
     <!-- Bottom Huge CTA -->
     <section class="cta-section container" id="contact">
-        <div class="cta-card">
-            <h2 style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 24px; color: #fff; position: relative; z-index: 2;">Mari berkarya bersama.</h2>
-            <p style="position: relative; z-index: 2; max-width: 600px; margin: 0 auto 48px; color: var(--text-muted);">Terbuka untuk kolaborasi seni, pameran, komisi karya, dan diskusi kreatif.</p>
-            
-            <div class="cta-email-box">
-                <span class="cta-email-text">abiyyu@email.com</span>
-                <a href="mailto:abiyyu@email.com" class="btn btn-primary cta-btn">
-                    Sapa Saya <i class="ri-arrow-right-line" style="margin-left: 8px;"></i>
-                </a>
-            </div>
+      <div class="cta-card">
+        <h2
+          style="
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 24px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+          "
+        >
+          Mari berkarya bersama.
+        </h2>
+        <p
+          style="
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin: 0 auto 48px;
+            color: var(--text-muted);
+          "
+        >
+          Terbuka untuk kolaborasi seni, pameran, komisi karya, dan diskusi
+          kreatif.
+        </p>
+        <div class="cta-email-box">
+          <span class="cta-email-text">abimanyuibrahim1042@gmail.com</span>
+          <a
+            class="btn btn-primary cta-btn"
+            href="mailto:abimanyuibrahim1042@gmail.com"
+          >
+            Sapa Saya
+            <i class="ri-arrow-right-line" style="margin-left: 8px"></i>
+          </a>
         </div>
+      </div>
     </section>
-
     <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <a href="#" class="logo">
-                    <div class="logo-icon"><i class="ri-palette-fill"></i></div>
-                    ABIU.
-                </a>
-                <p class="mt-4">Seniman Visual berbasis di Semarang, Indonesia.<br>Menerjemahkan kondisi manusia ke dalam bentuk abstrak.</p>
-            </div>
-            <div class="footer-links">
-                <div class="link-group">
-                    <h4>Karya</h4>
-                    <a href="#gallery">Galeri</a>
-                    <a href="#series">Seri</a>
-                    <a href="#process">Proses</a>
-                </div>
-                <div class="link-group">
-                    <h4>Tentang</h4>
-                    <a href="#about">Biografi</a>
-                    <a href="#reviews">Ulasan</a>
-                    <a href="#">Konsep Karya</a>
-                </div>
-                <div class="link-group">
-                    <h4>Hubungi</h4>
-                    <a href="#">Instagram</a>
-                    <a href="#">Behance</a>
-                    <a href="mailto:abiyyu@email.com">Email</a>
-                </div>
-            </div>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <a class="logo" href="#">
+            <div class="logo-icon"><i class="ri-palette-fill"></i></div>
+            ABIU.
+          </a>
+          <p class="mt-4">
+            Seniman Visual berbasis di Semarang, Indonesia.<br />Menerjemahkan
+            kondisi manusia ke dalam bentuk abstrak.
+          </p>
         </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2026 ABIYYU IBRAHIM. Seluruh hak cipta dilindungi.</p>
-            <div class="socials">
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-behance-line"></i></a>
-                <a href="#"><i class="ri-mail-line"></i></a>
-            </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Karya</h4>
+            <a href="gallery.html">Galeri</a>
+            <a href="#series">Seri</a>
+            <a href="#process">Proses</a>
+          </div>
+          <div class="link-group">
+            <h4>Tentang</h4>
+            <a href="#about">Biografi</a>
+            <a href="#reviews">Ulasan</a>
+            <a href="#">Konsep Karya</a>
+          </div>
+          <div class="link-group">
+            <h4>Hubungi</h4>
+            <a href="https://instagram.com/abiyyuibrahimm" target="_blank"
+              >Instagram</a
+            >
+            <a href="https://wa.me/6288806567598" target="_blank">WhatsApp</a>
+            <a href="mailto:abimanyuibrahim1042@gmail.com">Email</a>
+          </div>
         </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 ABIYYU IBRAHIM. Seluruh hak cipta dilindungi.</p>
+        <div class="socials">
+          <a href="https://instagram.com/abiyyuibrahimm" target="_blank"
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a href="https://wa.me/6288806567598" target="_blank"
+            ><i class="ri-whatsapp-line"></i
+          ></a>
+          <a href="mailto:abimanyuibrahim1042@gmail.com"
+            ><i class="ri-mail-line"></i
+          ></a>
+        </div>
+      </div>
     </footer>
-
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close">×</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
