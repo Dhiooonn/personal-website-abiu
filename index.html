@@ -130,33 +130,198 @@
             <p>Menampilkan galeri karya seni dengan presentasi yang kuat dan tak terganggu.</p>
         </div>
 
-        <div class="bento-grid">
-            <div class="bento-card gallery-card span-2 glow-top">
-                <img src="https://images.unsplash.com/photo-1513569771920-c9e1d31714cb?q=80&w=800&auto=format&fit=crop" class="gallery-img" alt="Whispers Artwork">
+        <!-- Category Filters -->
+        <div class="gallery-filters" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 40px;">
+            <button class="btn btn-pill filter-btn active" data-filter="all" style="cursor: pointer; background: var(--primary); color: #fff; border: 1px solid var(--primary);">Semua</button>
+            <button class="btn btn-pill filter-btn" data-filter="desain-bitmap" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Desain Bitmap</button>
+            <button class="btn btn-pill filter-btn" data-filter="desain-map" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Desain Map</button>
+            <button class="btn btn-pill filter-btn" data-filter="ilustration" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Ilustrasi</button>
+            <button class="btn btn-pill filter-btn" data-filter="label" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Label</button>
+            <button class="btn btn-pill filter-btn" data-filter="poster" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Poster</button>
+            <button class="btn btn-pill filter-btn" data-filter="vektor-ilustration" style="cursor: pointer; border: 1px solid rgba(255,255,255,0.1);">Vektor Ilustrasi</button>
+        </div>
+
+        <div class="bento-grid" id="galleryGrid">
+            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
+                <img src="assets/images/desain-bitmap/bitmap-1.jpg" class="gallery-img" alt="Desain Bitmap">
                 <div class="gallery-content">
-                    <h3 class="mb-2">Whispers</h3>
-                    <p class="text-muted">2026 · Cat Minyak di Kanvas</p>
+                    <h3 class="mb-2">Bitmap 1</h3>
+                    <p class="text-muted">Desain Bitmap</p>
                 </div>
             </div>
-            <div class="bento-card gallery-card span-1">
-                <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=400&auto=format&fit=crop" class="gallery-img" alt="Void Artwork">
+            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
+                <img src="assets/images/desain-bitmap/bitmap-2.jpg" class="gallery-img" alt="Desain Bitmap">
                 <div class="gallery-content">
-                    <h3 class="mb-2">Void</h3>
-                    <p class="text-muted">2025</p>
+                    <h3 class="mb-2">Bitmap 2</h3>
+                    <p class="text-muted">Desain Bitmap</p>
                 </div>
             </div>
-            <div class="bento-card gallery-card span-1 glow-bottom">
-                <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=400&auto=format&fit=crop" class="gallery-img" alt="Genesis Artwork">
+            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
+                <img src="assets/images/desain-bitmap/bitmap-3.jpg" class="gallery-img" alt="Desain Bitmap">
                 <div class="gallery-content">
-                    <h3 class="mb-2">Genesis</h3>
-                    <p class="text-muted">2024</p>
+                    <h3 class="mb-2">Bitmap 3</h3>
+                    <p class="text-muted">Desain Bitmap</p>
                 </div>
             </div>
-            <div class="bento-card gallery-card span-2 glow-bottom">
-                <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=800&auto=format&fit=crop" class="gallery-img" alt="The Echo Artwork">
+            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
+                <img src="assets/images/desain-bitmap/boxx.png" class="gallery-img" alt="Desain Bitmap">
                 <div class="gallery-content">
-                    <h3 class="mb-2">The Echo</h3>
-                    <p class="text-muted">2024 · Media Campuran</p>
+                    <h3 class="mb-2">Boxx</h3>
+                    <p class="text-muted">Desain Bitmap</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-bitmap">
+                <img src="assets/images/desain-bitmap/revisi.jpg" class="gallery-img" alt="Desain Bitmap">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Revisi</h3>
+                    <p class="text-muted">Desain Bitmap</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="desain-map">
+                <img src="assets/images/desain-map/peta final.png" class="gallery-img" alt="Desain Map" style="object-position: top;">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Peta Final</h3>
+                    <p class="text-muted">Desain Map</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
+                <img src="assets/images/ilustration/IMG_0344.PNG" class="gallery-img" alt="Ilustrasi">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Img_0344</h3>
+                    <p class="text-muted">Ilustrasi</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
+                <img src="assets/images/ilustration/IMG_0368.PNG" class="gallery-img" alt="Ilustrasi">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Img_0368</h3>
+                    <p class="text-muted">Ilustrasi</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
+                <img src="assets/images/ilustration/IMG_0369.PNG" class="gallery-img" alt="Ilustrasi">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Img_0369</h3>
+                    <p class="text-muted">Ilustrasi</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
+                <img src="assets/images/ilustration/IMG_0370.PNG" class="gallery-img" alt="Ilustrasi">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Img_0370</h3>
+                    <p class="text-muted">Ilustrasi</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
+                <img src="assets/images/ilustration/IMG_0371.PNG" class="gallery-img" alt="Ilustrasi">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Img_0371</h3>
+                    <p class="text-muted">Ilustrasi</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="ilustration">
+                <img src="assets/images/ilustration/IMG_0414.JPG" class="gallery-img" alt="Ilustrasi">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Img_0414</h3>
+                    <p class="text-muted">Ilustrasi</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="label">
+                <img src="assets/images/label/LABEL-2.png" class="gallery-img" alt="Label" style="object-fit: contain; background: #fff;">
+                <div class="gallery-content" style="background: linear-gradient(to top, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.7) 60%, transparent);">
+                    <h3 class="mb-2">Label 2</h3>
+                    <p class="text-muted">Label</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="label">
+                <img src="assets/images/label/LABEL.png" class="gallery-img" alt="Label" style="object-fit: contain; background: #fff;">
+                <div class="gallery-content" style="background: linear-gradient(to top, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.7) 60%, transparent);">
+                    <h3 class="mb-2">Label</h3>
+                    <p class="text-muted">Label</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="label">
+                <img src="assets/images/label/label-nastar.png" class="gallery-img" alt="Label" style="object-fit: contain; background: #fff;">
+                <div class="gallery-content" style="background: linear-gradient(to top, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.7) 60%, transparent);">
+                    <h3 class="mb-2">Label Nastar</h3>
+                    <p class="text-muted">Label</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="label">
+                <img src="assets/images/label/poster-nastar.png" class="gallery-img" alt="Label" style="object-fit: contain; background: #fff;">
+                <div class="gallery-content" style="background: linear-gradient(to top, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.7) 60%, transparent);">
+                    <h3 class="mb-2">Poster Nastar</h3>
+                    <p class="text-muted">Label</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
+                <img src="assets/images/poster/Artboard.jpg" class="gallery-img" alt="Poster">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Artboard</h3>
+                    <p class="text-muted">Poster</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
+                <img src="assets/images/poster/DP.jpg" class="gallery-img" alt="Poster">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Dp</h3>
+                    <p class="text-muted">Poster</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
+                <img src="assets/images/poster/SHAMP-FINNN.jpg" class="gallery-img" alt="Poster">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Shamp Finnn</h3>
+                    <p class="text-muted">Poster</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
+                <img src="assets/images/poster/Selaras-dengan-alam.jpg" class="gallery-img" alt="Poster">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Selaras Dengan Alam</h3>
+                    <p class="text-muted">Poster</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
+                <img src="assets/images/poster/bloodsfinal.jpg" class="gallery-img" alt="Poster">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Bloodsfinal</h3>
+                    <p class="text-muted">Poster</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="poster">
+                <img src="assets/images/poster/jojo.jpg" class="gallery-img" alt="Poster">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Jojo</h3>
+                    <p class="text-muted">Poster</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="vektor-ilustration">
+                <img src="assets/images/vektor-ilustration/88.png" class="gallery-img" alt="Vektor Ilustrasi" style="object-fit: contain; background: #fff;">
+                <div class="gallery-content">
+                    <h3 class="mb-2">88</h3>
+                    <p class="text-muted">Vektor Ilustrasi</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="vektor-ilustration">
+                <img src="assets/images/vektor-ilustration/Untitled-1.png" class="gallery-img" alt="Vektor Ilustrasi" style="object-fit: contain; background: #fff;">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Untitled 1</h3>
+                    <p class="text-muted">Vektor Ilustrasi</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="vektor-ilustration">
+                <img src="assets/images/vektor-ilustration/ikan.png" class="gallery-img" alt="Vektor Ilustrasi" style="object-fit: contain; background: #fff;">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Ikan</h3>
+                    <p class="text-muted">Vektor Ilustrasi</p>
+                </div>
+            </div>
+            <div class="bento-card gallery-card span-1 filter-item" data-category="vektor-ilustration">
+                <img src="assets/images/vektor-ilustration/semarang.png" class="gallery-img" alt="Vektor Ilustrasi" style="object-fit: contain; background: #fff;">
+                <div class="gallery-content">
+                    <h3 class="mb-2">Semarang</h3>
+                    <p class="text-muted">Vektor Ilustrasi</p>
                 </div>
             </div>
         </div>

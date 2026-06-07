@@ -53,3 +53,45 @@ if (reviewsSlider && prevBtn && nextBtn) {
     reviewsSlider.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
   });
 }
+
+// Gallery Filter Logic
+const filterBtns = document.querySelectorAll('.filter-btn');
+const filterItems = document.querySelectorAll('.filter-item');
+
+if (filterBtns.length > 0 && filterItems.length > 0) {
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterBtns.forEach(b => {
+        b.classList.remove('active');
+        b.style.background = 'transparent';
+        b.style.color = 'inherit';
+        b.style.border = '1px solid rgba(255,255,255,0.1)';
+      });
+      
+      // Add active class to clicked button
+      btn.classList.add('active');
+      btn.style.background = 'var(--primary)';
+      btn.style.color = '#fff';
+      btn.style.border = '1px solid var(--primary)';
+      
+      const filterValue = btn.getAttribute('data-filter');
+      
+      filterItems.forEach(item => {
+        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+          item.style.display = 'flex'; // bento cards use flex layout
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          }, 50);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.8)';
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300); // Wait for transition
+        }
+      });
+    });
+  });
+}
