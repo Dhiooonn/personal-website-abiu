@@ -44,7 +44,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // Simple Scroll Reveal (Optional enhancement)
 const observerOptions = {
-  threshold: 0.1,
+  threshold: 0,
   rootMargin: "0px 0px -50px 0px"
 };
 
