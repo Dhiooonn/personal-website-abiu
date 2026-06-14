@@ -9,6 +9,39 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('mobile-active');
+    
+    // Toggle icon between menu and close
+    const icon = menuToggle.querySelector('i');
+    if (navbar.classList.contains('mobile-active')) {
+      icon.classList.remove('ri-menu-3-line');
+      icon.classList.add('ri-close-line');
+    } else {
+      icon.classList.remove('ri-close-line');
+      icon.classList.add('ri-menu-3-line');
+    }
+  });
+}
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (navbar.classList.contains('mobile-active')) {
+      navbar.classList.remove('mobile-active');
+      const icon = menuToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('ri-close-line');
+        icon.classList.add('ri-menu-3-line');
+      }
+    }
+  });
+});
+
 // Simple Scroll Reveal (Optional enhancement)
 const observerOptions = {
   threshold: 0.1,
