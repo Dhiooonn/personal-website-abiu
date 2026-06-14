@@ -525,35 +525,49 @@ section {
 
 /* Gallery Bento Cards */
 .gallery-card {
-  padding: 0;
-  min-height: 450px;
+  min-height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.gallery-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  margin: 0;
 }
 
 .gallery-img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 400px;
+  border-radius: 12px;
   object-fit: cover;
-  opacity: 0.7;
-  z-index: 0;
+  opacity: 0.9;
+  z-index: 1;
   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s;
 }
 
 .gallery-card:hover .gallery-img {
-  transform: scale(1.08);
-  opacity: 0.9;
+  transform: scale(1.03);
+  opacity: 1;
 }
 
 .gallery-content {
-  padding: 48px;
-  background: linear-gradient(to top, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.4) 60%, transparent);
+  padding: 0;
+  background: none;
   position: relative;
   z-index: 1;
+}
+
+.gallery-title {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin: 0;
 }
 
 .span-2 { grid-column: span 2; }

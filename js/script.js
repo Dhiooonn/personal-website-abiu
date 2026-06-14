@@ -109,7 +109,7 @@ if (lightbox) {
     item.style.cursor = 'pointer';
     item.addEventListener('click', () => {
       const img = item.querySelector('.gallery-img');
-      const title = item.querySelector('h3');
+      const title = item.querySelector('.gallery-title');
       
       if (img) {
         lightbox.style.display = 'block';
